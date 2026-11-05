@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kala pattha কালা পাঠা</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            animation: flashColor 2s ease-in-out infinite;
+        }
+
+        @keyframes flashColor {
+            0%, 100% {
+                background-color: black;
+            }
+            50% {
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Changed height to 100vh so the container spreads across the full screen, allowing space-between to work -->
+    <div style="display: flex; flex-direction: column; justify-content: space-between; min-height: 100vh; text-align: center;">
+  
+        <!-- Top Container -->
+        <div style="display: flex; justify-content: center;">
+            <div style="color: white;"><h1>Rifat</h1></div>
+        </div>
+
+        <h1 style="color: grey;">IS A</h1>
+        <br>
+
+        <!-- Middle Container -->
+        <div style="display: flex; justify-content: center; transform: translateY(-50%);">
+            <div style="color:black; font-weight: bold; font-style: italic"><h1>Kala Patthha/কালা পাঠা</h1></div>
+        </div>
+
+        <h1 style="color: grey;">Scroll DOWN</h1>
+
+        <a href="final.html" style="text-decoration: none;">
+            <!-- Added display: block; right here so the margin: 0 auto works perfectly -->
+            <button style="display: block; color:skyblue; font-size: 2em; border-radius: 15px; margin: 0 auto; background-color: rgb(214, 202, 31); padding: 20px; width: 50%; border:2px solid #333; cursor: pointer;">
+                Press for the next and last page
+            </button>
+        </a>
+
+        <!-- Fixed the tag from <image> to <img> -->
+        <img src="kalaptha.png" alt="Kala Pattha" style="max-width: 100%; height: auto; margin: 0 auto;">
+
+        <div></div>
+    </div>                                             
+</body>
+</html>
